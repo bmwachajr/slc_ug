@@ -10,13 +10,12 @@ import requests
 
 
 def get_data(string):
-  url = 'https://services.aonaware.com/DictService/DictService.asmx/Define?word=' + string +' HTTP/1.1'
+  url = 'https://wordsapiv1.p.mashape.com/words/'+string+'/definitions'
   resp = requests.get(url)
   if resp.status_code != 200:
       #Something went wrong
-      raise ApiError('GET Failed code: {}'.format(resp.status_code))
+      print('GET Failed code: {}'.format(resp.status_code))
   for Item in resp.json():
       #print('{} {}'.format(todo_item['id'], todo_item['summary']))
-      print "yolo"
 
 print (get_data('angry'))
