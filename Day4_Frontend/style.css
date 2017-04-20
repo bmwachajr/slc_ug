@@ -8,10 +8,19 @@ html, body {
 
 .main-page{
     min-height: 100%;
-    text-align:center;
     width:600px;
+    margin-left:auto;
+    margin-right:auto;
     margin-bottom: -50px;
+    text-align:center;
 } 
+
+.content{
+    margin-left:60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 .form .form-input{
     width:100%;
