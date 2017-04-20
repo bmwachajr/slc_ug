@@ -1,14 +1,16 @@
 /*
 google homepage style sheet
 */
-body{
-    background-color:fff;
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 .main-page{
+    min-height: 100%;
     text-align:center;
     width:600px;
-    margin:0 auto;
+    margin-bottom: -50px;
 } 
 
 .form .form-input{
@@ -39,7 +41,9 @@ body{
 
 #footer{
     background-color:#f8f8f8;
-    border-top: 1px solid #f2f2f2;    
+    border-top: 1px solid #f2f2f2;   
+    height: 50px;
+    margin-top: -50px;    
 }
 
 #footer ul{
